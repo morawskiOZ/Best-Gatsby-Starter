@@ -3,5 +3,9 @@ import { ReactElement } from 'react'
 import { ContactInput } from './Input/Input'
 
 export const App = (): ReactElement => {
-  return <ContactInput onSearch={() => console.log('test')} />
+  return (
+    <div data-testid="app">
+      <ContactInput onSearch={() => console.log('test')} />
+    </div>
+  )
 }
